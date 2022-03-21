@@ -36,7 +36,7 @@ React native working with state (Functional Component) example
 
 ---
 ## Output
-![Output](https://github.com/Ayush-Navadiya/ReReact_Native_Working_With_State/blob/master/Output/output.gif)
+![Output](https://github.com/Ayush-Navadiya/React_Native_Working_With_State/blob/master/Output/output.gif)
 
 
 
