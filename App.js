@@ -1,10 +1,21 @@
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default function App() {
+
+  const [click, setClick] = useState(0);
+  // you can also use = const [click, setClick] = React.useState(0);
+  
+  // Button press will call this function
+  const btnclicked = () => {
+    setClick(click + 1);
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={{color: '#fff', margin: 20}}>Button clicked {click} times!</Text>
+      <Button onPress={btnclicked} title='CLICK ME' />
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +24,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
   },
